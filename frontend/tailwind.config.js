@@ -12,7 +12,19 @@ module.exports = {
         md: 'calc(var(--radius) - 2px)',
         sm: 'calc(var(--radius) - 4px)'
       },
+      fontFamily: {
+        heading: ['"Cormorant Garamond"', 'serif'],
+        body: ['Outfit', 'sans-serif'],
+        mono: ['"Space Mono"', 'monospace'],
+      },
       colors: {
+        bone: '#F4F1EB',
+        sand: '#EAE5D9',
+        ink: '#1F1A17',
+        clay: '#5C5046',
+        terracotta: '#B85C38',
+        walnut: '#4A3B32',
+        olive: '#555E4B',
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         card: {
@@ -75,6 +87,9 @@ module.exports = {
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out'
+      },
+      letterSpacing: {
+        'widest2': '0.25em',
       }
     }
   },

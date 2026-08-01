@@ -1,0 +1,24 @@
+{
+  "summary": "First-finish smoke testing for Mr. Wood Interiors site. Backend endpoints (leads POST/GET, /leads/stats, /chat streaming) and all key frontend flows (homepage load, lead form validation + success, testimonials carousel, FAQ accordion, sticky WhatsApp/Call links, AI chat widget streaming, admin dashboard with stats and leads table) verified end-to-end via public URL. No console errors observed.",
+  "tested_scope": ["frontend", "backend", "integration"],
+  "passed": [
+    "GET /api/leads/stats -> 200 {total, new}",
+    "POST /api/leads -> 200 persists lead with UUID, defaults city=Jaipur, status=new",
+    "GET /api/leads -> 200 returns lead list including new record",
+    "POST /api/chat -> streams text response (verified 'Sure — how can I help?')",
+    "Homepage loads with correct title and quote-form + chat-toggle present",
+    "Lead form empty submit: no lead-success shown (validation blocks submit)",
+    "Lead form valid submit: lead-success element appears and lead saved (admin total increased from 2 -> 3)",
+    "Testimonials next button changes testimonial-quote text",
+    "FAQ accordion has 6 triggers and clicks/expands",
+    "sticky-whatsapp -> https://wa.me/919829000000?text=... , sticky-call -> tel:919829000000 (both correct)",
+    "Chat widget: chat-window opens, chat-send streams real AI reply (~450 chars) with wardrobe layout suggestions",
+    "/admin renders leads-table, stat-total=3, stat-new=3 in sync with backend",
+    "Zero JS console errors during full flow"
+  ],
+  "failed": [],
+  "action_items": [],
+  "success_rate": {"backend": "100%", "frontend": "100%"},
+  "retest_needed": false,
+  "full_testing_deferred": true
+}
