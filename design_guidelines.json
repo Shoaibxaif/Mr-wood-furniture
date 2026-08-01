@@ -1,0 +1,111 @@
+{
+  "project_name": "MR. WOOD INTERIORS & FURNITURE",
+  "design_direction": "Award-worthy, Premium Editorial Wood Craftsmanship",
+  "theme": "light-earthy",
+  "typography": {
+    "fonts": {
+      "heading": "Cormorant Garamond",
+      "body": "Outfit",
+      "accent": "Space Mono (for labels and numbers only)"
+    },
+    "scale": {
+      "h1_hero": "text-5xl sm:text-6xl md:text-7xl lg:text-8xl tracking-tighter leading-[0.9]",
+      "h2_section": "text-4xl sm:text-5xl lg:text-6xl tracking-tight leading-none",
+      "h3_card": "text-2xl sm:text-3xl tracking-tight",
+      "body": "text-base sm:text-lg leading-relaxed text-wood-600",
+      "overline": "text-xs tracking-[0.2em] uppercase font-bold text-wood-500"
+    },
+    "guidelines": "Do not use Inter or Space Grotesk. Headings should heavily utilize Cormorant Garamond, mixing regular and italic words for editorial tension. Never center-align massive text blocks."
+  },
+  "colors": {
+    "background": {
+      "primary": "#F4F1EB",
+      "secondary": "#EAE5D9",
+      "dark_section": "#1F1A17"
+    },
+    "text": {
+      "primary": "#1F1A17",
+      "secondary": "#5C5046",
+      "inverse": "#F4F1EB"
+    },
+    "brand": {
+      "terracotta": "#B85C38",
+      "walnut": "#4A3B32",
+      "olive": "#555E4B"
+    },
+    "borders": {
+      "subtle": "rgba(31, 26, 23, 0.1)",
+      "dark": "rgba(244, 241, 235, 0.2)"
+    },
+    "guidelines": "Never use pure white or pure black. No AI-slop purple gradients. Emphasize organic, matte, architectural colors that evoke wood, stone, and clay."
+  },
+  "spacing_and_layout": {
+    "container": "max-w-[1600px] mx-auto px-6 md:px-12",
+    "section_padding": "py-24 md:py-32 lg:py-40",
+    "grid": "grid-cols-1 md:grid-cols-4 lg:grid-cols-12 gap-6 md:gap-10",
+    "guidelines": "Use 2x normal spacing. Embrace negative space. Use 'Tetris' bento grids (asymmetrical spans like col-span-5 next to col-span-7). Optical alignment over geometric."
+  },
+  "motion_and_interaction": {
+    "hero_reveal": "Framer Motion: Masked line-by-line upward text reveal on load (overflow: hidden, y: 100% to 0, staggerChildren: 0.15).",
+    "scrolling": "Lenis for smooth momentum scrolling. Required for premium feel.",
+    "parallax": "Subtle framer-motion useScroll & useTransform for hero background image y-axis translation.",
+    "hover_states": "Portfolio cards: Clipped frame (scale 0.95 inside container) expands to scale 1.05 on hover. Spotlight effect on dark sections.",
+    "marquee": "Use react-fast-marquee. Extremely slow, smooth, serif font, large gaps (gap-32), pale background with dark earthy text."
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-walnut text-inverse px-8 py-4 rounded-none uppercase tracking-widest text-sm hover:bg-terracotta transition-colors duration-300",
+      "secondary": "border border-walnut/20 text-text-primary px-8 py-4 rounded-none uppercase tracking-widest text-sm hover:bg-walnut hover:text-inverse transition-colors"
+    },
+    "cards": {
+      "portfolio": "relative group overflow-hidden bg-secondary",
+      "services": "border-b border-subtle py-8 flex justify-between items-center hover:bg-white/50 transition-colors group cursor-pointer"
+    },
+    "forms": {
+      "input": "bg-transparent border-b border-subtle py-4 px-0 rounded-none focus:outline-none focus:border-walnut focus:ring-0 w-full text-lg",
+      "guidelines": "Do not use standard Vercel/Shadcn rounded inputs. Use architectural single-bottom-border inputs."
+    },
+    "navigation": {
+      "header": "fixed top-0 w-full z-50 backdrop-blur-xl bg-[#F4F1EB]/80 border-b border-subtle transition-all",
+      "guidelines": "Do not use fully transparent header backgrounds to ensure text remains readable over images."
+    }
+  },
+  "page_blueprint": {
+    "1_header": "Sticky crystal glass nav. Left: Logo, Middle: Links, Right: 'Get a Quote' button.",
+    "2_hero": "Kinetic typography. Large headline 'CRAFTING TIMELESS SPACES'. Line-by-line reveal. Right/bottom aligned high-end interior photo with subtle parallax.",
+    "3_marquee": "Slow editorial ribbon displaying 'MR. WOOD INTERIORS — JAIPUR — CUSTOM FURNITURE — PREMIUM CRAFTSMANSHIP'.",
+    "4_manifesto": "Numbered chapters (01, 02, 03). Massive numbers in Space Mono. Heavy serif text outlining the design/build process.",
+    "5_services": "Minimalist accordion or hover-image list for Modular Kitchens, Wardrobes, TV Units, False Ceiling, Office Furniture.",
+    "6_portfolio": "Asymmetrical masonry grid of past projects. Clipped frames with image scaling on hover.",
+    "7_why_choose_us": "Dark section (bg-dark_section). Text-inverse. Trust indicators for local SEO (Jaipur's Best, 10+ Years, etc).",
+    "8_testimonials": "Large quote text taking up 80% of width. Author details bottom right.",
+    "9_faq": "Clean accordion for AEO (Answer Engine Optimization) targeting interior design queries.",
+    "10_contact_lead": "Split layout. Left: Showroom map, NAP details. Right: Minimalist lead capture form.",
+    "11_footer": "Massive typography 'MR. WOOD' across the bottom. Links and social.",
+    "12_widgets": "Sticky WhatsApp + Call action buttons. AI Design Assistant chat widget bottom right."
+  },
+  "media_and_images": {
+    "guidelines": "No placeholders. Use specific architectural and interior photography. Use overlays (bg-black/30) only if text is directly on top of images.",
+    "urls": {
+      "hero_living_room": "https://images.unsplash.com/photo-1724582586495-d050726cf354?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzl8MHwxfHNlYXJjaHwyfHxwcmVtaXVtJTIwbW9kZXJuJTIwaW50ZXJpb3IlMjBkZXNpZ24lMjBsaXZpbmclMjByb29tfGVufDB8fHx8MTc4NTYwODA3NHww&ixlib=rb-4.1.0&q=85",
+      "portfolio_wood_craft": "https://images.unsplash.com/photo-1631396326838-de37e5f8bcbc?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTJ8MHwxfHNlYXJjaHw0fHxjdXN0b20lMjB3b29kJTIwZnVybml0dXJlJTIwY3JhZnRzbWFuc2hpcCUyMGRldGFpbGVkfGVufDB8fHx8MTc4NTYwODA3NHww&ixlib=rb-4.1.0&q=85",
+      "portfolio_kitchen": "https://images.unsplash.com/photo-1602028915047-37269d1a73f7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MDV8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjBtb2R1bGFyJTIwa2l0Y2hlbiUyMGx1eHVyeSUyMGFyY2hpdGVjdHVyZXxlbnwwfHx8fDE3ODU2MDgwNzV8MA&ixlib=rb-4.1.0&q=85",
+      "services_interior_1": "https://images.unsplash.com/photo-1720247520881-672bc136da8a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzl8MHwxfHNlYXJjaHw0fHxwcmVtaXVtJTIwbW9kZXJuJTIwaW50ZXJpb3IlMjBkZXNpZ24lMjBsaXZpbmclMjByb29tfGVufDB8fHx8MTc4NTYwODA3NHww&ixlib=rb-4.1.0&q=85",
+      "services_interior_2": "https://images.unsplash.com/photo-1682662044733-9120471befc7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MDV8MHwxfHNlYXJjaHw0fHxtb2Rlcm4lMjBtb2R1bGFyJTIwa2l0Y2hlbiUyMGx1eHVyeSUyMGFyY2hpdGVjdHVyZXxlbnwwfHx8fDE3ODU2MDgwNzV8MA&ixlib=rb-4.1.0&q=85"
+    }
+  },
+  "testing": {
+    "accessibility": "Ensure all interactive and key informational elements have a 'data-testid' attribute (e.g., data-testid='hero-cta-button', data-testid='quote-form')."
+  },
+  "universal_guidelines_for_main_agent": [
+    "Use .js files (JSX) instead of .tsx where applicable.",
+    "Do not apply generic 'transition: all'. Use specific transitions (e.g., 'transition-colors', 'transition-transform').",
+    "Do not center align the app container (.App { text-align: center; } is forbidden).",
+    "Implement glass-morphism effectively but NEVER use fully transparent backgrounds where text readability is compromised.",
+    "Do not use AI assistant emojis (🤖, 💡, etc.) for UI icons. Use lucide-react or @phosphor-icons/react.",
+    "Prioritize HTML/Tailwind over Shadcn for complex marketing layouts like the Hero, Marquee, and Manifesto grids.",
+    "Ensure all interactive elements have hover/active states.",
+    "Use 2-3x more spacing than default to create a premium, uncrowded feel.",
+    "Never use placeholder URLs; rely strictly on the provided image URLs."
+  ]
+}
