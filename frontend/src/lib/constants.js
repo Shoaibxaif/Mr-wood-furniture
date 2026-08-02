@@ -16,11 +16,33 @@ export const whatsappLink = (text = "Hi Mr. Wood, I'd like to discuss an interio
   `https://wa.me/${BUSINESS.whatsapp}?text=${encodeURIComponent(text)}`;
 
 export const NAV_LINKS = [
-  { label: "Work", href: "#portfolio" },
-  { label: "Services", href: "#services" },
-  { label: "Process", href: "#manifesto" },
-  { label: "Studio", href: "#why" },
-  { label: "Contact", href: "#contact" },
+  { label: "Work", to: "/projects" },
+  { label: "Services", to: "/services" },
+  { label: "Guides", to: "/guides" },
+  { label: "About", to: "/about" },
+  { label: "Trade", to: "/trade" },
+  { label: "Contact", to: "/contact" },
+];
+
+export const HOME_PRICING = [
+  { name: "Essential", tag: "Smart & durable", price: "from ₹6 lakh", note: "2 BHK core interiors", features: ["BWP ply carcass", "Premium laminate finishes", "Kitchen, wardrobes & units", "Basic ceiling & lighting"] },
+  { name: "Premium", tag: "Most chosen", price: "from ₹12 lakh", note: "3 BHK full interior", features: ["Mixed premium finishes", "Designed ceilings & lighting", "Custom furniture", "3-year warranty"], featured: true },
+  { name: "Signature", tag: "No compromise", price: "from ₹22 lakh", note: "Luxury turnkey", features: ["Veneer / PU & imported hardware", "Bespoke everything", "Full styling & décor", "5-year warranty"] },
+];
+
+export const DIFFERENTIATORS = [
+  { title: "We manufacture in-house", body: "No dealer margins, no outsourced quality gaps. Every piece is milled and finished in our own Jaipur workshop." },
+  { title: "One accountable studio", body: "The people who design and promise are the people who build and install. One number to call, before and after." },
+  { title: "Honest material advice", body: "We'll talk you out of finishes you don't need and tell you where spend actually shows. Trust over upselling." },
+  { title: "Predictable timelines", body: "Because we control manufacturing, we control the schedule — and we've built a habit of finishing on time." },
+];
+
+export const PROCESS5 = [
+  { no: "01", title: "Consult", body: "A real conversation about how you live, cook and host — not a catalogue pitch." },
+  { no: "02", title: "Design", body: "Detailed 3D layouts, honest materials and a transparent, itemised estimate." },
+  { no: "03", title: "Craft", body: "Our Jaipur workshop mills, joins and finishes every piece in-house." },
+  { no: "04", title: "Install", body: "Precise on-site installation with trades coordinated so nothing gets undone." },
+  { no: "05", title: "Stand behind", body: "Spotless handover and a written warranty from a team that stays reachable." },
 ];
 
 export const SERVICES = [
